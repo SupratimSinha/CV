@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+hr {
+  display: none; /* Hidden as sections have borders or other visual separation */
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+header table { /* Specific to the table in the header */
+  margin: 0 auto;
+  /* The HTML cellspacing attribute's effect is managed by cell padding or border-spacing.
+     Current layout relies on default table behavior without explicit spacing here. */
+}
+
+header img {
+  border-radius: 50%;
+  max-width: 100%; /* For responsive scaling */
+  height: auto;    /* For responsive scaling */
+}
+
+header h1 {
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 2em;
+}
+
+header p { /* General p in header */
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px; /* Ensuring consistent small margin for paragraphs */
+  margin-bottom: 5px;
+}
+
+header p em strong a { /* Specific to the link in the tagline */
+  color: #337ab7;
+  text-decoration: none;
+}
+
+header p em strong a:hover {
+  text-decoration: underline;
+}
+
+header p em { /* For "The founder and CEO..." line */
+    color: #555;
+    font-size: 1.1em;
+    margin-top: 0; 
+}
+
+
+/* Navigation Styles */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ddd; /* Slight color change on hover for nav links */
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+main h2 {
+  color: #337ab7;
+  border-bottom: 2px solid #337ab7;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+/* Education List Styles */
+main section ul {
+  padding-left: 20px;
+  list-style-type: square;
+  margin-top: 10px; /* Added for spacing below heading */
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+main section table, 
+main section th, 
+main section td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+main section table th {
+  background-color: #e9ecef;
+  color: #333;
+}
+
+/* Skills Table Specifics */
+main section:last-of-type table td:first-child {
+    width: 50%;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 0;
+}
